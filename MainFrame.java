@@ -8,6 +8,8 @@ public class MainFrame extends JFrame {
         SnekComponent game = new SnekComponent();
         add(game);
         pack();
+        setResizable(false);
+        setLocationRelativeTo(null);
         new Thread(game).start();
     }
 

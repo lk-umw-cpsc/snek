@@ -152,7 +152,7 @@ public class SnekComponent extends JPanel implements Runnable, KeyListener {
         for (SnekPiece p : snek) {
             map[p.x][p.y] = false;
         }
-        ArrayList<SnekPiece> possiblePicks = new ArrayList(256);
+        ArrayList<SnekPiece> possiblePicks = new ArrayList<>(256);
         for (int x = 0; x < 16; x++) {
             for (int y = 0; y < 16; y++) {
                 if (map[x][y]) {
