@@ -231,6 +231,8 @@ public class SnekComponent extends JPanel implements Runnable, KeyListener {
         // draw shadows for the blocks that make up the snake
         g.setColor(BLOCK_SHADOW_COLOR);
         for (SnekPiece p : snek) {
+            // bit shift by 4 has the same effect as multiplying by 16
+            // but is less cpu-intensive (supposedly)
             g.fillRect(3 + (p.x << 4), 3 + (p.y << 4), 14, 14);
         }
 
