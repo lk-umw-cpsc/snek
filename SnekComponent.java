@@ -169,7 +169,6 @@ public class SnekComponent extends JPanel implements Runnable, KeyListener {
 
     private static final Color BACKGROUND_COLOR = new Color(255, 250, 199);
     private static final Color BACKGROUND_COLOR2 = new Color(255, 246, 150);
-    // private static final Color BACKGROUND_COLOR2 = new Color(168, 164, 114);
     private static final Color BLOCK_SHADOW_COLOR = new Color(0, 0, 0, 80);
     private static final Color BLOCK_COLOR = new Color(36, 36, 35);
     private static final Color FOOD_COLOR = new Color(222, 0, 0);
@@ -193,10 +192,7 @@ public class SnekComponent extends JPanel implements Runnable, KeyListener {
     }
 
     @Override
-    public void keyTyped(KeyEvent e) {
-        // TODO Auto-generated method stub
-        
-    }
+    public void keyTyped(KeyEvent e) {}
 
     @Override
     public void keyPressed(KeyEvent e) {
@@ -224,9 +220,6 @@ public class SnekComponent extends JPanel implements Runnable, KeyListener {
     }
 
     @Override
-    public void keyReleased(KeyEvent e) {
-        // TODO Auto-generated method stub
-        
-    }
+    public void keyReleased(KeyEvent e) {}
     
 }
